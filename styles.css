@@ -5,7 +5,6 @@
   --accent: #e5e7eb; /* Secondary text, header links */
   --logo: #f9faf8; /* Hero logo text */
   --secondary: #3882f6; /* Button and call and call to action */
-  --obscur: #1f2937; /* Information header text */
 }
 
 * {
@@ -13,7 +12,7 @@
   margin: 0;
   padding: 0;
   font-family: Roboto, Arial, Helvetica, sans-serif;
-  outline: dotted 1px;
+  /* outline: dotted 1px; */
 }
 
 body {
@@ -29,7 +28,9 @@ body {
   margin: 0 auto;
 }
 
+/* Header section */
 .header {
+  background-color: var(--main);
   padding: 32px 0;
 }
 
@@ -55,9 +56,18 @@ a {
   text-decoration: none;
 }
 
-.header,
+/* Hero section */
 .hero {
   background-color: var(--main);
+  padding: 32px 0; /* Check this later */
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.hero-left {
+  flex: 1;
+  max-width: 50%;
 }
 
 .hero h1 {
@@ -69,12 +79,23 @@ a {
 .hero p {
   font-size: 18px;
   color: var(--accent);
+  margin: 16px 0;
 }
 
-button {
-  color: var(--secondary);
+.hero button {
+  color: var(--logo);
+  background-color: var(--secondary);
+  padding: 8px 32px;
+  border-radius: 8px;
+  font-weight: bold;
 }
 
+.hero img {
+  flex: 1;
+  max-width: 50%;
+}
+
+/* Pseudo Carousel section */
 .content h2 {
   font-size: 36px;
   color: var(--main);
