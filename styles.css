@@ -9,10 +9,16 @@
 }
 
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: Roboto, Arial, Helvetica, sans-serif;
-  /* outline: dotted 1px; */
+  outline: dotted 1px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
 }
 
 .container {
@@ -21,7 +27,7 @@
   margin: 0 auto;
 }
 
-.header {
+.header .container {
   padding: 16px;
   display: flex;
 }
@@ -34,8 +40,8 @@
   list-style-type: none;
   padding: 0%;
   margin: 0%;
-  display: flex;
   gap: 16px;
+  display: flex;
 }
 
 .header,
@@ -77,6 +83,7 @@ button {
 }
 
 footer {
+  margin-top: auto;
   background-color: var(--main);
   text-align: center;
   color: var(--accent);
