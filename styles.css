@@ -55,15 +55,17 @@ a {
 /* Hero section */
 .hero {
   background-color: var(--main);
-  padding: 64px 0; /* Check this later */
   display: flex;
   justify-content: space-between;
-  gap: 32px;
+}
+
+.hero.container {
+  padding: 64px 0; /* Check this later */
 }
 
 .hero-left {
-  flex: auto;
-  max-width: 50%;
+  flex: 1;
+  padding-right: 16px;
 }
 
 .hero h1 {
@@ -87,7 +89,9 @@ a {
 }
 
 .hero-right > img {
-  max-width: 700px;
+  flex: 1 1 500px;
+  max-width: 730px;
+  object-fit: cover;
 }
 
 /* Pseudo Carousel section */
@@ -133,7 +137,6 @@ a {
   max-width: 280px;
 }
 
-
 /* Quote Section */
 .quote {
   padding: 32px 0;
@@ -141,11 +144,24 @@ a {
   font-size: 36px;
   color: #1f2937;
   font-weight: 300;
+  display: flex;
+  flex-direction: column;
 }
 
-.modal {
-    padding: 32px 0;
+.quote > em {
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+}
 
+.quote > p {
+  margin-left: auto;
+  color: var(--text);
+  font-weight: bold;
+}
+/* Modal Section */
+
+.modal {
+  padding: 32px 0;
 }
 
 footer {
