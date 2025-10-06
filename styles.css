@@ -15,17 +15,11 @@
   /* outline: dotted 1px; */
 }
 
-body {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
 .container {
   width: 80vw;
   height: 100%;
   margin: 0 auto;
+  padding: 0 auto;
 }
 
 /* Header section */
@@ -59,7 +53,7 @@ a {
 /* Hero section */
 .hero {
   background-color: var(--main);
-  padding: 32px 0; /* Check this later */
+  padding: 64px 0; /* Check this later */
   display: flex;
   justify-content: space-between;
   gap: 32px;
@@ -96,9 +90,46 @@ a {
 }
 
 /* Pseudo Carousel section */
-.content h2 {
+.content {
+  padding: 64px 0;
+}
+.content > h2 {
+  text-align: center;
   font-size: 36px;
   color: var(--main);
+}
+
+.content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  padding: 32px;
+}
+
+.item-container {
+  border: 1px solid var(--secondary);
+  overflow: hidden;
+  border-radius: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+}
+
+.item-container > img {
+  object-fit: cover;
+  width:100%;
+  height:300px;
+}
+
+.item-container > p {
+  color: var(--main);
+  text-overflow: clip;
+  text-align: center;
+  padding: 8px 0;
+  max-width: 250px;
 }
 
 .quote {
