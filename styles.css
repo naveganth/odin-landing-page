@@ -14,7 +14,7 @@
   margin: 0;
   padding: 0;
   font-family: Roboto, Arial, Helvetica, sans-serif;
-  outline: dotted 1px;
+  /* outline: dotted 1px; */
 }
 
 .container {
@@ -27,10 +27,12 @@
 /* Header section */
 .header {
   background-color: var(--main);
-  padding: 32px 0;
+  padding: 16px 0;
+  border-bottom: var(--main) 2px outset ;
 }
 
 .header .container {
+  border: 0px;
   display: flex;
 }
 
@@ -60,7 +62,7 @@ a {
 }
 
 .hero.container {
-  padding: 64px 0; /* Check this later */
+  padding: 32px 0; /* Check this later */
 }
 
 .hero-left {
@@ -90,13 +92,13 @@ a {
 
 .hero-right > img {
   flex: 1 1 500px;
-  max-width: 730px;
+  max-width: 650px;
   object-fit: cover;
 }
 
 /* Pseudo Carousel section */
 .content {
-  padding: 64px 0;
+  padding: 48px 0;
 }
 .content > h2 {
   text-align: center;
@@ -169,22 +171,26 @@ a {
 }
 
 .modal-container {
+  max-width: 1100px;
   background-color: var(--secondary);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.modal-container h4,
-p {
+.modal-container .one {
   margin-right: auto;
-  text-align: left;
   flex: 1;
 }
 
+.modal-container .two {
+  margin-left: auto;
+}
+
 .modal button {
-  color: var(--logo);
-  background-color: var(--secondary);
+  flex: 1;
+  color: var(--hero-text);
+  background-color: var(--text);
   padding: 8px 32px;
   border-radius: 8px;
   font-weight: bold;
