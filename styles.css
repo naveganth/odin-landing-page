@@ -162,10 +162,32 @@ a {
   font-weight: bold;
   font-size: x-large;
 }
-/* Modal Section */
 
+/* Modal Section */
 .modal {
-  padding: 32px 0;
+  padding: 32px 64px;
+}
+
+.modal-container {
+  background-color: var(--secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-container h4,
+p {
+  margin-right: auto;
+  text-align: left;
+  flex: 1;
+}
+
+.modal button {
+  color: var(--logo);
+  background-color: var(--secondary);
+  padding: 8px 32px;
+  border-radius: 8px;
+  font-weight: bold;
 }
 
 footer {
