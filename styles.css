@@ -200,6 +200,6 @@ footer {
   margin-top: auto;
   background-color: var(--main);
   text-align: center;
-  color: var(--accent);
+  color: var(--secondary);
   padding: 36px;
 }
