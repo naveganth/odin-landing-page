@@ -147,6 +147,9 @@ a {
   display: flex;
   flex-direction: column;
 }
+.quote > div {
+  max-width: 1000px;
+}
 
 .quote > em {
   color: var(--text-secondary);
@@ -157,6 +160,7 @@ a {
   margin-left: auto;
   color: var(--text);
   font-weight: bold;
+  font-size: x-large;
 }
 /* Modal Section */
 
